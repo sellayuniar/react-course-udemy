@@ -3,8 +3,12 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
 function ExpenseItem(props) {
+
+  let title = props.title;
+
   const clickHandler = () => {
-    console.log('click');
+    title = "Update";
+    console.log(title);
   }
 
   return (
